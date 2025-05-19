@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Typing Test</h1>
+
+    <div class="btn-group">
+      <button onclick="startTest()">▶️ Start</button>
+      <button onclick="checkTyping()">✅ Done</button>
+      <button onclick="restartTest()">🔁 Restart</button>
+    </div>
+
+    <label for="difficulty" class="time">⏰ Select Difficulty :</label><br><br>
+    <select id="difficulty" onchange="setDifficulty()">
+      <option value="30">Easy 30 seconds</option>
+      <option value="20" selected>Medium 20 seconds</option>
+      <option value="10">Hard 10 seconds</option>
+    </select>
+
+    <div id="sentence" class="sentence-box"></div>
+
+    <input
+      type="text"
+      id="typingInput"
+      placeholder="Start typing here ..."
+      autocomplete="off"
+      disabled
+      oninput="handleTyping()"
+    />
+
+    <div id="timer">⏳ Time : 20s</div>
+    <div id="message"></div>
+    <div id="accuracy"></div>
+
+    <audio id="typingSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_1fe3d1c3a5.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

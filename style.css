@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffecec;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#difficulty{
+    padding: 10px 30px;
+    font-size: 20px;
+    border: 3px solid red;
+    border-radius: 10px;
+    background-color: #fce4e4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  border: 5px solid rgb(138, 1, 1);
+  padding: 30px;
+  background: #fff3f3;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(200, 0, 0, 0.2);
+  margin-top: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #cc0000;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+#sentence {
+  font-size: 24px;
+  margin: 20px 0;
+  min-height: 60px;
+}
+
+input[type="text"], input[type="number"] {
+  width: 90%;
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border: 3px solid #cc0000;
+  border-radius: 8px;
+}
+
+input[type="number"]{
+    margin-top: 20px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.btn-group button {
+  padding: 14px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: #d90000;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-group button:hover {
+  background-color: #cc0000;
+}
+
+#timer, #message, #accuracy, #wpm, #history {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.highlight-correct {
+  color: green;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.highlight-wrong {
+  color: red;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#history {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+  max-height: 120px;
+  overflow-y: auto;
+}
+.time{
+    font-size: 22px;
+    font-weight: bold;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
